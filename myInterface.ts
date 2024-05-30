@@ -8,7 +8,19 @@ interface user{
       getCoupon(couponname:string,value:number):number
 }
 
-const sahil:user={dbId:22,email:"s@123.com",userId:2903,
+//Re-opening of the interface
+interface user{
+    gitToken:string
+}
+
+interface Admin extends user{
+   role:"admin"|"Ta"|"learners"
+}
+
+
+const sahil:Admin={dbId:22,email:"s@123.com",userId:2903,
+role:"admin",
+gitToken:"github",
 startTrail:()=>{
     return "Trial started"
 },
