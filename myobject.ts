@@ -18,6 +18,17 @@ function createCourse():{name:string,price:number}{
     return {name:'React js',price:3999}
 }
 
+//Type aliases example
 
+type User={
+    name:string;
+    email:string;
+    isActive:boolean;
+}
+
+function CreateUsers(user:User):User{
+    return{name:"",email:"",isActive:true}
+}
+CreateUsers({name:"",email:"",isActive:true});
 
 export{}
